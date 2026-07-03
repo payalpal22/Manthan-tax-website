@@ -1,0 +1,1477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Manthan Tax Consultancy – Simplifying Taxation, Empowering Business
+    </title>
+    <meta
+      name="description"
+      content="Manthan Tax Consultancy – Professional Tax, Compliance & Business Advisory Services in NCR, Ghaziabad. GST, Income Tax, Company Registration, Audit & more."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <a href="tel:+919310143521">📞 +91 93101 43521</a>
+        <a href="mailto:manthantaxconsultancy@gmail.com"
+          >✉️ manthantaxconsultancy@gmail.com</a
+        >
+        <a>📍 Loni, Ghaziabad, U.P.</a>
+      </div>
+      <div class="topbar-right">
+        <a
+          onclick="
+            window.open(
+              'https://wa.me/919310143521?text=Hello%20Manthan%20Tax%20Consultancy!%20I%20would%20like%20to%20enquire%20about%20your%20services.',
+              '_blank',
+            )
+          "
+          style="cursor: pointer"
+          >💬 WhatsApp</a
+        >
+        <span class="topbar-divider">|</span>
+        <a onclick="navigate('contact')">Get Free Consultation</a>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <div class="logo" onclick="navigate('home')">
+        <div class="logo-icon">M</div>
+        <div class="logo-text">
+          <div class="logo-name">Manthan Tax Consultancy</div>
+          <div class="logo-tag">Simplifying Taxation, Empowering Business</div>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a onclick="navigate('home')" data-page="home" class="active">Home</a>
+        </li>
+        <li><a onclick="navigate('about')" data-page="about">About Us</a></li>
+        <li>
+          <a onclick="navigate('services')" data-page="services">Services</a>
+        </li>
+        <li><a onclick="navigate('team')" data-page="team">Our Team</a></li>
+        <li>
+          <a onclick="navigate('industries')" data-page="industries"
+            >Industries</a
+          >
+        </li>
+        <li>
+          <a onclick="navigate('contact')" data-page="contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ══ HOME ══ -->
+    <div class="page active" id="page-home">
+      <section class="hero">
+        <div
+          class="slide active"
+          style="background-image: url(&quot;images/slide1.jpeg&quot;)"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <div class="slide-eyebrow">
+              Manthan Tax Consultancy — NCR's Trusted Advisors
+            </div>
+            <h2>
+              Expert Tax &amp; Compliance Solutions for
+              <em>Growing Businesses</em>
+            </h2>
+            <p>
+              Reliable, practical, and result-oriented financial and compliance
+              solutions for businesses, startups, and professionals across NCR.
+            </p>
+            <div class="slide-btns">
+              <a class="btn-gold" onclick="navigate('services')"
+                >Explore Services</a
+              >
+              <a class="btn-outline-white" onclick="navigate('contact')"
+                >Free Consultation</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          style="background-image: url(&quot;images/slide2.jpeg&quot;)"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <div class="slide-eyebrow">
+              Complete Compliance — One Firm, All Services
+            </div>
+            <h2>
+              GST, Income Tax, Audit &amp; Business Registration
+              <em>Under One Roof</em>
+            </h2>
+            <p>
+              From GST registration to company incorporation, audits to tax
+              filing — every compliance need handled professionally and on time.
+            </p>
+            <div class="slide-btns">
+              <a class="btn-gold" onclick="navigate('contact')"
+                >Get Started Today</a
+              >
+              <a class="btn-outline-white" onclick="navigate('about')"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          style="background-image: url(&quot;images/slide3.jpeg&quot;)"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <div class="slide-eyebrow">Your Long-Term Compliance Partner</div>
+            <h2>
+              Trusted Financial &amp; Regulatory <em>Advisory Partner</em>
+            </h2>
+            <p>
+              Strategic guidance on tax planning, business structuring,
+              regulatory licensing, and CFO advisory to help your business grow
+              with confidence.
+            </p>
+            <div class="slide-btns">
+              <a class="btn-gold" onclick="navigate('services')"
+                >View All Services</a
+              >
+              <a class="btn-outline-white" onclick="navigate('contact')"
+                >Talk to an Expert</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn slider-prev" onclick="changeSlide(-1)">
+          &#8249;
+        </button>
+        <button class="slider-btn slider-next" onclick="changeSlide(1)">
+          &#8250;
+        </button>
+        <div class="slider-dots" id="sliderDots">
+          <div class="dot active" onclick="goToSlide(0)"></div>
+          <div class="dot" onclick="goToSlide(1)"></div>
+          <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+      </section>
+
+      <div class="stats-strip">
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Clients Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Industries Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Services Offered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Compliance Focus</div>
+        </div>
+      </div>
+
+      <section class="about-home">
+        <div class="about-home-img">
+          <div class="img-box">🏛️</div>
+          <div class="badge">NCR's Trusted<br />Tax Advisors</div>
+        </div>
+        <div class="about-home-text">
+          <span class="section-label">About Manthan Tax Consultancy</span>
+          <h2 class="section-heading">
+            Professional Tax &amp; <span>Compliance</span> Solutions
+          </h2>
+          <div class="heading-bar"></div>
+          <p>
+            Manthan Tax Consultancy is a professional tax and business advisory
+            firm dedicated to providing reliable, practical, and result-oriented
+            financial and compliance solutions.
+          </p>
+          <p>
+            Based in NCR, we offer comprehensive services in GST, Income Tax,
+            audits, company registration, MCA compliance, MSME advisory,
+            licensing, accounting, and business consulting.
+          </p>
+          <div class="values-list">
+            <div class="value-item">Client-Focused Approach</div>
+            <div class="value-item">Timely Execution</div>
+            <div class="value-item">Professional Expertise</div>
+            <div class="value-item">Transparent Pricing</div>
+            <div class="value-item">End-to-End Support</div>
+            <div class="value-item">Confidential &amp; Secure</div>
+          </div>
+          <a class="btn-gold" onclick="navigate('about')">Read More About Us</a>
+        </div>
+      </section>
+
+      <section class="services-home">
+        <div class="services-home-header">
+          <div>
+            <span class="section-label">What We Offer</span>
+            <h2 class="section-heading">Our Core <span>Services</span></h2>
+            <div class="heading-bar"></div>
+          </div>
+          <a class="btn-outline-navy" onclick="navigate('services')"
+            >View All Services</a
+          >
+        </div>
+        <div class="services-grid">
+          <div class="svc-card">
+            <div class="svc-icon-wrap">📋</div>
+            <div class="svc-title">GST Services</div>
+            <p class="svc-text">
+              Registration, return filing, notices &amp; appeals — complete GST
+              compliance management for your business.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon-wrap">📊</div>
+            <div class="svc-title">Income Tax</div>
+            <p class="svc-text">
+              ITR filing, tax planning &amp; advisory, TDS returns, and
+              representation before tax authorities.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon-wrap">🔍</div>
+            <div class="svc-title">Audit &amp; Assurance</div>
+            <p class="svc-text">
+              Tax audit, statutory audit, internal audit, and financial
+              statement preparation with accuracy.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon-wrap">🏢</div>
+            <div class="svc-title">Business Registration</div>
+            <p class="svc-text">
+              Pvt Ltd, LLP, Partnership, MSME, Startup registration and PAN/TAN
+              registration services.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon-wrap">📜</div>
+            <div class="svc-title">Regulatory &amp; Licensing</div>
+            <p class="svc-text">
+              PASARA, IEC, DGFT, FSSAI, Shop &amp; Establishment, and
+              Professional Tax registration.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon-wrap">💼</div>
+            <div class="svc-title">Accounting &amp; Advisory</div>
+            <p class="svc-text">
+              Bookkeeping, payroll, financial planning, business structuring,
+              and CFO advisory support.
+            </p>
+            <div class="svc-arrow">→</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us">
+        <div class="why-us-inner">
+          <div class="why-us-grid">
+            <div>
+              <span class="section-label" style="color: var(--gold)"
+                >Why Choose Us</span
+              >
+              <h2 class="why-heading">
+                Why Businesses Trust <span>Manthan</span>
+              </h2>
+              <p class="why-desc">
+                We combine deep domain expertise with a client-centric approach
+                to deliver practical, timely, and result-oriented compliance
+                solutions.
+              </p>
+              <a class="btn-gold" onclick="navigate('contact')"
+                >Get Free Consultation</a
+              >
+            </div>
+            <div class="why-features">
+              <div class="why-feature">
+                <div class="why-feature-icon">⚡</div>
+                <h4>Fast Turnaround</h4>
+                <p>
+                  Quick processing and timely filing — never miss a deadline.
+                </p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">🔒</div>
+                <h4>100% Confidential</h4>
+                <p>
+                  Your financial data is treated with complete confidentiality.
+                </p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">👥</div>
+                <h4>Expert Team</h4>
+                <p>
+                  CA, Legal Advisor &amp; Business Consultant under one roof.
+                </p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">💰</div>
+                <h4>Transparent Pricing</h4>
+                <p>Clear, upfront pricing with no hidden charges.</p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">📱</div>
+                <h4>WhatsApp Support</h4>
+                <p>Quick responses via WhatsApp for urgent queries.</p>
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-icon">🌐</div>
+                <h4>Pan NCR Service</h4>
+                <p>Serving businesses across Delhi, Ghaziabad &amp; NCR.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="industries-home">
+        <span class="section-label">Industries We Serve</span>
+        <h2 class="section-heading">Serving Diverse <span>Industries</span></h2>
+        <div class="heading-bar"></div>
+        <div class="ind-grid">
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2" />
+                <path d="M7 2v20" />
+                <path
+                  d="M21 15V2a5 5 0 00-5 5v6h3v2a1 1 0 001 1h1a1 1 0 001-1v-2h-1"
+                />
+              </svg>
+            </div>
+            <div class="label">Restaurants &amp; Food</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </div>
+            <div class="label">Retail &amp; Trading</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="1" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                <line x1="12" y1="12" x2="12" y2="16" />
+                <line x1="10" y1="14" x2="14" y2="14" />
+              </svg>
+            </div>
+            <div class="label">Manufacturing</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path
+                  d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
+                />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+              </svg>
+            </div>
+            <div class="label">Export / Import</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <div class="label">Startups &amp; SMEs</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div class="label">Consultants &amp; Professionals</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path
+                  d="M21 16V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2z"
+                />
+                <polyline points="3 8 12 13 21 8" />
+              </svg>
+            </div>
+            <div class="label">Service Industry</div>
+          </div>
+          <div class="ind-item">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="32"
+                height="32"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                />
+              </svg>
+            </div>
+            <div class="label">NGOs &amp; Trusts</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-home">
+        <span class="section-label">Meet the Experts</span>
+        <h2 class="section-heading">Our <span>Team</span></h2>
+        <div class="heading-bar"></div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo">
+              👩‍💼
+              <div class="team-photo-badge">Chartered Accountant</div>
+            </div>
+            <div class="team-info">
+              <div class="team-name">CA Monika</div>
+              <div class="team-role">Chartered Accountant</div>
+              <p class="team-desc">
+                Expert in taxation, audit, and financial compliance with deep
+                expertise in GST, Income Tax, and statutory audits for
+                businesses of all sizes.
+              </p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              👨‍⚖️
+              <div class="team-photo-badge">Legal Advisor</div>
+            </div>
+            <div class="team-info">
+              <div class="team-name">Adv. Maneesh Kumar</div>
+              <div class="team-role">Legal Advisor</div>
+              <p class="team-desc">
+                Specialist in legal advisory, regulatory compliance, licensing
+                consultancy including PASARA, and business structuring for
+                startups and enterprises.
+              </p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              👨‍💻
+              <div class="team-photo-badge">Business Consultant</div>
+            </div>
+            <div class="team-info">
+              <div class="team-name">Gaurav</div>
+              <div class="team-role">Business Consultant</div>
+              <p class="team-desc">
+                Focused on business development, MSME advisory, company
+                registration, and guiding entrepreneurs through the startup
+                registration process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h2>Ready to Simplify Your Tax &amp; Compliance?</h2>
+          <p>
+            Get a free consultation from our experts today. No obligation, just
+            clarity.
+          </p>
+        </div>
+        <div class="cta-btns">
+          <a
+            class="btn-outline-navy"
+            onclick="
+              window.open(
+                'https://wa.me/919310143521?text=Hello%20Manthan%20Tax%20Consultancy!%20I%20would%20like%20to%20enquire%20about%20your%20services.',
+                '_blank',
+              )
+            "
+            >💬 WhatsApp</a
+          >
+          <a class="btn-outline-navy" onclick="navigate('contact')"
+            >✉️ Send Message</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- /home -->
+
+    <!-- ══ ABOUT ══ -->
+    <div class="page" id="page-about">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">Home › <span>About Us</span></div>
+          <h1>About Manthan Tax Consultancy</h1>
+          <p>Your trusted partner in tax, compliance, and business growth</p>
+        </div>
+      </div>
+      <section class="about-page">
+        <div class="about-page-grid">
+          <div>
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-heading">
+              Professional Tax &amp; <span>Advisory Firm</span>
+            </h2>
+            <div class="heading-bar"></div>
+            <div class="about-page-text">
+              <p>
+                Manthan Tax Consultancy is a professional tax and business
+                advisory firm dedicated to providing reliable, practical, and
+                result-oriented financial and compliance solutions to
+                businesses, startups, professionals, and individuals.
+              </p>
+              <p>
+                Based in NCR, we offer comprehensive services in GST, Income
+                Tax, audits, company registration, MCA compliance, MSME
+                advisory, licensing, accounting, and business consulting.
+              </p>
+              <p>
+                Our goal is to simplify complex tax and regulatory processes so
+                that our clients can focus on growing their business with
+                confidence. With a client-focused approach, timely execution,
+                and professional expertise, Manthan Tax Consultancy serves as a
+                trusted compliance and advisory partner.
+              </p>
+            </div>
+            <div class="about-stats-grid">
+              <div class="about-stat">
+                <div class="about-stat-num">500+</div>
+                <div class="about-stat-label">Clients Served</div>
+              </div>
+              <div class="about-stat">
+                <div class="about-stat-num">8+</div>
+                <div class="about-stat-label">Industries</div>
+              </div>
+              <div class="about-stat">
+                <div class="about-stat-num">20+</div>
+                <div class="about-stat-label">Services</div>
+              </div>
+              <div class="about-stat">
+                <div class="about-stat-num">NCR</div>
+                <div class="about-stat-label">Based, Pan India</div>
+              </div>
+            </div>
+            <a class="btn-gold" onclick="navigate('contact')"
+              >Get Free Consultation</a
+            >
+          </div>
+          <div>
+            <div class="mission-box">
+              <h3>🎯 Our Mission</h3>
+              <p>
+                To deliver accurate, timely, and practical taxation and
+                compliance solutions that support business growth and financial
+                confidence.
+              </p>
+            </div>
+            <div class="values-box" style="margin-top: 24px">
+              <h3>Our Core Values</h3>
+              <ul>
+                <li>Accuracy &amp; Precision in every filing</li>
+                <li>Client-Centric Approach</li>
+                <li>Timely Execution — never miss a deadline</li>
+                <li>Transparent &amp; Honest Pricing</li>
+                <li>Confidentiality of client data</li>
+                <li>Continuous learning &amp; professional growth</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══ SERVICES ══ -->
+    <div class="page" id="page-services">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">Home › <span>Services</span></div>
+          <h1>Our Services</h1>
+          <p>Comprehensive tax, compliance &amp; business advisory services</p>
+        </div>
+      </div>
+      <section class="services-page">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-heading">
+          Complete <span>Compliance Solutions</span>
+        </h2>
+        <div class="heading-bar"></div>
+        <div class="services-tabs">
+          <button class="tab-btn active" onclick="switchTab('taxation', this)">
+            Taxation
+          </button>
+          <button class="tab-btn" onclick="switchTab('audit', this)">
+            Audit &amp; Assurance
+          </button>
+          <button class="tab-btn" onclick="switchTab('registration', this)">
+            Business Registration
+          </button>
+          <button class="tab-btn" onclick="switchTab('licensing', this)">
+            Regulatory &amp; Licensing
+          </button>
+          <button class="tab-btn" onclick="switchTab('advisory', this)">
+            Accounting &amp; Advisory
+          </button>
+        </div>
+
+        <div class="tab-content active" id="tab-taxation">
+          <div class="svc-full-grid">
+            <div class="svc-full-card">
+              <div class="icon">📋</div>
+              <h4>GST Registration</h4>
+              <p>
+                Hassle-free GST registration for businesses, traders,
+                professionals, and e-commerce operators across India.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">📄</div>
+              <h4>GST Return Filing</h4>
+              <p>
+                Timely and accurate filing of GSTR-1, GSTR-3B, GSTR-9 and other
+                GST returns to ensure full compliance.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">⚖️</div>
+              <h4>GST Notices &amp; Appeals</h4>
+              <p>
+                Expert representation and handling of GST department notices,
+                assessments, and appeals before authorities.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🧾</div>
+              <h4>Income Tax Return Filing</h4>
+              <p>
+                ITR filing for individuals, HUFs, firms, companies — all
+                categories handled accurately and on time.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">📊</div>
+              <h4>Tax Planning &amp; Advisory</h4>
+              <p>
+                Strategic tax planning to legally minimize tax liability for
+                businesses and high-income individuals.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">💰</div>
+              <h4>TDS Return Filing</h4>
+              <p>
+                Quarterly TDS return filing (24Q, 26Q, 27Q), TDS reconciliation,
+                and Form 16/16A issuance support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-audit">
+          <div class="svc-full-grid">
+            <div class="svc-full-card">
+              <div class="icon">🔍</div>
+              <h4>Tax Audit</h4>
+              <p>
+                Conducting tax audits under Section 44AB of the Income Tax Act
+                with detailed audit reports and compliance checks.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🏛️</div>
+              <h4>Statutory Audit</h4>
+              <p>
+                Statutory audits for companies and LLPs as required under
+                Companies Act and other applicable statutes.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🔎</div>
+              <h4>Internal Audit</h4>
+              <p>
+                Process-oriented internal audits to identify risks, improve
+                controls, and enhance operational efficiency.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">📑</div>
+              <h4>Financial Statement Preparation</h4>
+              <p>
+                Preparation of Balance Sheet, P&amp;L, Cash Flow statements as
+                per applicable accounting standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-registration">
+          <div class="svc-full-grid">
+            <div class="svc-full-card">
+              <div class="icon">🏢</div>
+              <h4>Private Limited Company</h4>
+              <p>
+                End-to-end Pvt Ltd company incorporation including MCA filing,
+                DSC, DIN, and post-incorporation compliance.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🤝</div>
+              <h4>LLP Registration</h4>
+              <p>
+                Limited Liability Partnership registration with complete
+                documentation and MCA compliance setup.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">👥</div>
+              <h4>Partnership Firm Registration</h4>
+              <p>
+                Drafting of partnership deed and registration of partnership
+                firms under the applicable state act.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🏭</div>
+              <h4>MSME Registration</h4>
+              <p>
+                Udyam registration for Micro, Small &amp; Medium Enterprises to
+                avail government benefits and subsidies.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🚀</div>
+              <h4>Startup Registration</h4>
+              <p>
+                DPIIT startup recognition, registration, and guidance on
+                startup-specific tax exemptions and benefits.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🪪</div>
+              <h4>PAN / TAN Registration</h4>
+              <p>
+                PAN and TAN application for individuals, companies, firms, and
+                other entities quickly and accurately.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-licensing">
+          <div class="svc-full-grid">
+            <div class="svc-full-card">
+              <div class="icon">🛡️</div>
+              <h4>PASARA License Consultancy</h4>
+              <p>
+                Expert consultancy for Private Security Agencies Regulation Act
+                (PASARA) licensing — documentation to approval.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🌐</div>
+              <h4>IEC Registration</h4>
+              <p>
+                Import Export Code registration for businesses engaged in or
+                planning international trade operations.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">📦</div>
+              <h4>DGFT Services</h4>
+              <p>
+                DGFT portal services including MEIS, SEIS, advance
+                authorization, and export-import policy consultancy.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🍽️</div>
+              <h4>FSSAI Registration</h4>
+              <p>
+                Food license and FSSAI registration for restaurants, food
+                businesses, manufacturers, and traders.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🏪</div>
+              <h4>Shop &amp; Establishment</h4>
+              <p>
+                Registration under State Shop &amp; Establishment Act for all
+                types of commercial businesses and offices.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">💼</div>
+              <h4>Professional Tax Registration</h4>
+              <p>
+                Professional tax registration and compliance for employers and
+                professionals across states.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-advisory">
+          <div class="svc-full-grid">
+            <div class="svc-full-card">
+              <div class="icon">📚</div>
+              <h4>Bookkeeping &amp; Accounting</h4>
+              <p>
+                Regular bookkeeping, bank reconciliation, ledger maintenance,
+                and accounting on Tally/Zoho/QuickBooks.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">👩‍💻</div>
+              <h4>Payroll Compliance</h4>
+              <p>
+                Monthly payroll processing, PF, ESI, PT compliance, salary
+                structuring, and Form 16 preparation.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">📈</div>
+              <h4>Financial Planning</h4>
+              <p>
+                Short and long-term financial planning, cash flow management,
+                and budgeting for businesses.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🏗️</div>
+              <h4>Business Structuring</h4>
+              <p>
+                Advising on the most tax-efficient and legally appropriate
+                business structure for your specific needs.
+              </p>
+            </div>
+            <div class="svc-full-card">
+              <div class="icon">🎯</div>
+              <h4>CFO Advisory Support</h4>
+              <p>
+                Virtual CFO services for startups and SMEs — financial oversight
+                without the cost of a full-time CFO.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══ TEAM ══ -->
+    <div class="page" id="page-team">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">Home › <span>Our Team</span></div>
+          <h1>Our Team</h1>
+          <p>Expert professionals committed to your financial success</p>
+        </div>
+      </div>
+      <section class="team-page">
+        <span class="section-label">Meet the Experts</span>
+        <h2 class="section-heading">The People Behind <span>Manthan</span></h2>
+        <div class="heading-bar"></div>
+        <div class="team-full-grid">
+          <div class="team-card">
+            <div
+              class="team-photo"
+              style="background: linear-gradient(135deg, #dce8f5, #a8c0d8)"
+            >
+              👩‍💼
+              <div class="team-photo-badge">Chartered Accountant</div>
+            </div>
+            <div class="team-info">
+              <div class="team-name">CA Monika</div>
+              <div class="team-role">Chartered Accountant</div>
+              <p class="team-desc">
+                CA Monika is a qualified Chartered Accountant with expertise in
+                GST, Income Tax, audit, and financial compliance. She brings
+                in-depth knowledge of taxation laws and ensures accurate, timely
+                compliance for all clients. She handles complex tax matters with
+                precision and dedication.
+              </p>
+              <div style="margin-top: 16px">
+                <a
+                  href="tel:+917701937243"
+                  style="
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: var(--navy);
+                    text-decoration: none;
+                  "
+                  >📞 +91 77019 37243</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div
+              class="team-photo"
+              style="background: linear-gradient(135deg, #e8dcc8, #c8b090)"
+            >
+              👨‍⚖️
+              <div class="team-photo-badge">Legal Advisor</div>
+            </div>
+            <div class="team-info">
+              <div class="team-name">Adv. Maneesh Kumar</div>
+              <div class="team-role">Legal Advisor</div>
+              <p class="team-desc">
+                Adv. Maneesh Kumar is a practicing advocate specializing in
+                regulatory compliance, licensing, and legal advisory for
+                businesses. He provides expert guidance on PASARA licensing,
+                business registration, and navigating complex legal frameworks
+                across industries.
+              </p>
+              <div style="margin-top: 16px">
+                <a
+                  href="tel:+919310143521"
+                  style="
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: var(--navy);
+                    text-decoration: none;
+                  "
+                  >📞 +91 93101 43521</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div
+              class="team-photo"
+              style="background: linear-gradient(135deg, #d8e8d8, #a0c8a0)"
+            >
+              👨‍💻
+              <div class="team-photo-badge">Business Consultant</div>
+            </div>
+            <div class="team-info">
+              <div class="team-name">Gaurav</div>
+              <div class="team-role">Business Consultant</div>
+              <p class="team-desc">
+                Gaurav specializes in business development, MSME advisory,
+                company registrations, and startup consulting. He helps
+                entrepreneurs and small businesses navigate government
+                registration processes and leverage schemes designed to support
+                growing enterprises.
+              </p>
+              <div style="margin-top: 16px">
+                <a
+                  href="tel:+917683069553"
+                  style="
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: var(--navy);
+                    text-decoration: none;
+                  "
+                  >📞 +91 76830 69553</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══ INDUSTRIES ══ -->
+    <div class="page" id="page-industries">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">Home › <span>Industries</span></div>
+          <h1>Industries We Serve</h1>
+          <p>Deep domain expertise across diverse sectors</p>
+        </div>
+      </div>
+      <section class="industries-page">
+        <span class="section-label">Our Expertise</span>
+        <h2 class="section-heading">
+          Industries We <span>Specialise In</span>
+        </h2>
+        <div class="heading-bar"></div>
+        <div class="ind-full-grid">
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2" />
+                <path d="M7 2v20" />
+                <path
+                  d="M21 15V2a5 5 0 00-5 5v6h3v2a1 1 0 001 1h1a1 1 0 001-1v-2h-1"
+                />
+              </svg>
+            </div>
+            <h4>Restaurants &amp; Food Businesses</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </div>
+            <h4>Retail &amp; Trading</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="1" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                <line x1="12" y1="12" x2="12" y2="16" />
+                <line x1="10" y1="14" x2="14" y2="14" />
+              </svg>
+            </div>
+            <h4>Manufacturing</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path
+                  d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
+                />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h4>Export / Import Businesses</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h4>Startups &amp; SMEs</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h4>Consultants &amp; Professionals</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path
+                  d="M21 16V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2z"
+                />
+                <polyline points="3 8 12 13 21 8" />
+              </svg>
+            </div>
+            <h4>Service Industry</h4>
+          </div>
+          <div class="ind-full-card">
+            <div class="ind-icon-circle">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                width="36"
+                height="36"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                />
+              </svg>
+            </div>
+            <h4>NGOs &amp; Trusts</h4>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══ CONTACT ══ -->
+    <div class="page" id="page-contact">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">Home › <span>Contact</span></div>
+          <h1>Contact Us</h1>
+          <p>Talk to our experts — free consultation, no obligation</p>
+        </div>
+      </div>
+      <section class="contact-page">
+        <div class="contact-grid">
+          <div class="contact-info-box">
+            <h3>Get In Touch</h3>
+            <div class="contact-item">
+              <div class="c-icon">📍</div>
+              <div class="c-text">
+                <p>Office Address</p>
+                <strong
+                  >CF-271, Ansal Tronica City, Pavi Sadakpur, Loni, Ghaziabad,
+                  Uttar Pradesh – 201102</strong
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">📞</div>
+              <div class="c-text">
+                <p>Adv. Maneesh Kumar</p>
+                <strong><a href="tel:+919310143521">+91 93101 43521</a></strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">📞</div>
+              <div class="c-text">
+                <p>CA Monika</p>
+                <strong><a href="tel:+917701937243">+91 77019 37243</a></strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">📞</div>
+              <div class="c-text">
+                <p>Gaurav</p>
+                <strong><a href="tel:+917683069553">+91 76830 69553</a></strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">✉️</div>
+              <div class="c-text">
+                <p>Email</p>
+                <strong
+                  ><a href="mailto:manthantaxconsultancy@gmail.com"
+                    >manthantaxconsultancy@gmail.com</a
+                  ></strong
+                >
+              </div>
+            </div>
+            <div class="whatsapp-strip">
+              <h4>💬 WhatsApp Us</h4>
+              <p>
+                Send us a message on WhatsApp for quick responses. Available on
+                all three numbers above.
+              </p>
+              <div
+                style="
+                  margin-top: 14px;
+                  display: flex;
+                  gap: 10px;
+                  flex-wrap: wrap;
+                "
+              >
+                <a
+                  onclick="
+                    window.open(
+                      'https://wa.me/919310143521?text=Hello%20Manthan%20Tax%20Consultancy!%20I%20would%20like%20to%20enquire%20about%20your%20services.',
+                      '_blank',
+                    )
+                  "
+                  class="btn-gold"
+                  style="font-size: 11px; padding: 9px 18px; cursor: pointer"
+                  >Maneesh Kumar</a
+                >
+                <a
+                  onclick="
+                    window.open(
+                      'https://wa.me/917701937243?text=Hello%20Manthan%20Tax%20Consultancy!%20I%20would%20like%20to%20enquire%20about%20your%20services.',
+                      '_blank',
+                    )
+                  "
+                  class="btn-gold"
+                  style="font-size: 11px; padding: 9px 18px; cursor: pointer"
+                  >CA Monika</a
+                >
+                <a
+                  onclick="
+                    window.open(
+                      'https://wa.me/917683069553?text=Hello%20Manthan%20Tax%20Consultancy!%20I%20would%20like%20to%20enquire%20about%20your%20services.',
+                      '_blank',
+                    )
+                  "
+                  class="btn-gold"
+                  style="font-size: 11px; padding: 9px 18px; cursor: pointer"
+                  >Gaurav</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-box">
+            <h3>Send Us a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label
+                ><input type="text" placeholder="Rahul" />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label
+                ><input type="text" placeholder="Sharma" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label
+              ><input type="email" placeholder="rahul@business.com" />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label
+              ><input type="tel" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label>Service Required</label>
+              <select>
+                <option value="">-- Select a Service --</option>
+                <option>GST Registration</option>
+                <option>GST Return Filing</option>
+                <option>Income Tax Return Filing</option>
+                <option>Tax Planning & Advisory</option>
+                <option>Audit & Assurance</option>
+                <option>Private Limited Company Registration</option>
+                <option>LLP Registration</option>
+                <option>MSME Registration</option>
+                <option>PASARA License Consultancy</option>
+                <option>FSSAI Registration</option>
+                <option>Bookkeeping & Accounting</option>
+                <option>CFO Advisory Support</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label
+              ><textarea
+                placeholder="Describe your requirement or ask us anything..."
+              ></textarea>
+            </div>
+            <button
+              class="btn-gold"
+              style="width: 100%; padding: 15px; font-size: 13px"
+              onclick="sendViaEmail()"
+            >
+              Send via Email →
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="f-logo">
+            <div class="f-logo-icon">M</div>
+            <div>
+              <div class="f-logo-name">Manthan Tax Consultancy</div>
+              <div class="f-logo-tag">
+                Simplifying Taxation, Empowering Business
+              </div>
+            </div>
+          </div>
+          <p>
+            Professional tax, compliance, and business advisory services for
+            businesses, startups, and individuals in NCR and beyond.
+          </p>
+          <div class="footer-contact-mini">
+            <a href="tel:+919310143521">📞 +91 93101 43521</a>
+            <a href="mailto:manthantaxconsultancy@gmail.com"
+              >✉️ manthantaxconsultancy@gmail.com</a
+            >
+            <a>📍 Loni, Ghaziabad, U.P. – 201102</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li>
+              <a href="tel:+919310143521">📞 Adv. Maneesh: +91 93101 43521</a>
+            </li>
+            <li>
+              <a href="tel:+917701937243">📞 CA Monika: +91 77019 37243</a>
+            </li>
+            <li><a href="tel:+917683069553">📞 Gaurav: +91 76830 69553</a></li>
+            <li>
+              <a
+                onclick="
+                  window.open(
+                    'https://wa.me/919310143521?text=Hello%20Manthan%20Tax%20Consultancy!%20I%20would%20like%20to%20enquire%20about%20your%20services.',
+                    '_blank',
+                  )
+                "
+                style="cursor: pointer"
+                >💬 WhatsApp Us</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="
+                  window.location.href =
+                    'mailto:manthantaxconsultancy@gmail.com?subject=Enquiry%20from%20Website&body=Hello%20Manthan%20Tax%20Consultancy,%0A%0AI%20would%20like%20to%20enquire%20about%20your%20services.%0A%0AName:%0APhone:%0AService%20Required:%0A%0AThank%20you.'
+                "
+                style="cursor: pointer"
+                >📧 Email Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Manthan Tax Consultancy. All rights reserved.</span>
+        <span>CF-271, Ansal Tronica City, Loni, Ghaziabad – 201102</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
