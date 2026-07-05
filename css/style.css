@@ -25,6 +25,20 @@ body {
   background: var(--white);
 }
 
+/* ICONS (replaces emoji throughout the site) */
+.icon-inline {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.14em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
 /* PAGE SYSTEM */
 .page {
   display: none;
