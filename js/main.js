@@ -42,7 +42,7 @@ function switchTab(tabId, btn) {
   btn.classList.add("active");
 }
 
-// ── EMAIL FORM SENDER ──
+// ── EMAIL FORM SENDER (opens the visitor's email app with message pre-filled) ──
 function sendViaEmail() {
   const firstName = document
     .querySelector('input[placeholder="Rahul"]')
@@ -71,20 +71,26 @@ function sendViaEmail() {
   const subject = "Enquiry from Website - " + firstName + " " + lastName;
 
   const body =
-    `Hello Manthan Tax Consultancy,\n\n` +
-    `Name: ${firstName} ${lastName}\n` +
-    `Phone: ${phone}\n` +
-    (email ? `Email: ${email}\n` : "") +
-    (service ? `Service Required: ${service}\n` : "") +
-    (message ? `Message: ${message}\n` : "") +
-    `\nThank you.`;
+    "Hello Manthan Tax Consultancy,%0D%0A%0D%0A" +
+    "Name: " +
+    firstName +
+    " " +
+    lastName +
+    "%0D%0A" +
+    "Phone: " +
+    phone +
+    "%0D%0A" +
+    (email ? "Email: " + email + "%0D%0A" : "") +
+    (service ? "Service Required: " + service + "%0D%0A" : "") +
+    (message ? "Message: " + message + "%0D%0A" : "") +
+    "%0D%0AThank you.";
 
   const mailtoLink =
     "mailto:manthantaxconsultancy@gmail.com" +
     "?subject=" +
     encodeURIComponent(subject) +
     "&body=" +
-    encodeURIComponent(body);
+    body;
 
   window.location.href = mailtoLink;
 }
