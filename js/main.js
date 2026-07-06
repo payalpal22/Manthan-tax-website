@@ -42,7 +42,52 @@ function switchTab(tabId, btn) {
   btn.classList.add("active");
 }
 
-// ── WHATSAPP FORM SENDER ──
+// ── EMAIL FORM SENDER ──
+function sendViaEmail() {
+  const firstName = document
+    .querySelector('input[placeholder="Rahul"]')
+    .value.trim();
+  const lastName = document
+    .querySelector('input[placeholder="Sharma"]')
+    .value.trim();
+  const email = document
+    .querySelector('input[placeholder="rahul@business.com"]')
+    .value.trim();
+  const phone = document
+    .querySelector('input[placeholder="+91 98765 43210"]')
+    .value.trim();
+  const service = document
+    .querySelector(".contact-form-box select")
+    .value.trim();
+  const message = document
+    .querySelector(".contact-form-box textarea")
+    .value.trim();
+
+  if (!firstName || !phone) {
+    alert("Please fill in at least your Name and Phone Number.");
+    return;
+  }
+
+  const subject = "Enquiry from Website - " + firstName + " " + lastName;
+
+  const body =
+    `Hello Manthan Tax Consultancy,\n\n` +
+    `Name: ${firstName} ${lastName}\n` +
+    `Phone: ${phone}\n` +
+    (email ? `Email: ${email}\n` : "") +
+    (service ? `Service Required: ${service}\n` : "") +
+    (message ? `Message: ${message}\n` : "") +
+    `\nThank you.`;
+
+  const mailtoLink =
+    "mailto:manthantaxconsultancy@gmail.com" +
+    "?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+}
 function sendToWhatsApp() {
   const firstName = document
     .querySelector('input[placeholder="Rahul"]')
