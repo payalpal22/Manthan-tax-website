@@ -17,6 +17,12 @@ function goToSlide(n) {
 }
 setInterval(() => changeSlide(1), 5500);
 
+// ── HAMBURGER MENU ──
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("open");
+  document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+
 // ── ROUTER ──
 function navigate(page) {
   document
@@ -27,6 +33,8 @@ function navigate(page) {
   document.querySelectorAll(".nav-links a").forEach((a) => {
     a.classList.toggle("active", a.dataset.page === page);
   });
+  document.getElementById("navLinks").classList.remove("open");
+  document.getElementById("hamburgerBtn").classList.remove("open");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
